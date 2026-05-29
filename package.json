@@ -1,0 +1,26 @@
+{
+  "name": "note6",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "pnpm -r dev",
+    "web:dev": "pnpm --filter web dev",
+    "core:dev": "pnpm --filter core dev",
+    "database:build": "pnpm --filter @note6/database build",
+    "generate:core": "pnpm --filter web generate:core",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prisma:generate": "pnpm --filter @note6/database prisma:generate",
+    "prisma:migrate:dev": "pnpm --filter @note6/database prisma:migrate:dev",
+    "prisma:migrate:deploy": "pnpm --filter @note6/database prisma:migrate:deploy",
+    "prisma:migrate:reset": "pnpm --filter @note6/database prisma:migrate:reset",
+    "prisma:studio": "pnpm --filter @note6/database prisma:studio"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.33.0",
+  "dependencies": {
+    "@note6/database": "link:packages/database"
+  }
+}
