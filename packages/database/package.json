@@ -33,6 +33,9 @@
     "build": "tsc",
     "clean": "rm -rf dist && rm tsconfig.tsbuildinfo",
     "prisma:generate": "prisma generate",
+    "prisma:migrate:dev": "pnpm exec prisma migrate dev",
+    "prisma:migrate:deploy": "pnpm exec prisma migrate deploy",
+    "prisma:migrate:reset": "pnpm exec prisma migrate reset",
     "test": "echo \"Error: no test specified\" && exit 1"
     
   },
